@@ -10,4 +10,7 @@ export class BookShelf implements Aggregate {
     public appendBook(book: Book) {
         this.books.push(book);
     }
+    public bookAt(index: number): Book {
+        return this.books[index];
+    }
 }
