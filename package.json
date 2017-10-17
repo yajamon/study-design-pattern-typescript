@@ -1,0 +1,24 @@
+{
+  "name": "study-design-pattern-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yajamon@github.com/yajamon/study-design-pattern-typescript.git"
+  },
+  "author": "yajamon <yajamon.tatsuki@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yajamon/study-design-pattern-typescript/issues"
+  },
+  "homepage": "https://github.com/yajamon/study-design-pattern-typescript#readme"
+}
