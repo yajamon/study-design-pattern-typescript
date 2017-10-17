@@ -5,7 +5,8 @@
     ],
     "jsRules": {},
     "rules": {
-        "interface-name": [ "never-prefix" ]
+        "interface-name": [ "never-prefix" ],
+        "no-console": [ false ]
     },
     "rulesDirectory": []
 }
