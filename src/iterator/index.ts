@@ -5,9 +5,9 @@ const shelf = new BookShelf();
 
 shelf.appendBook(new Book("A first commit"));
 
-const iterator = shelf.iterator();
-while (iterator.hasNext()) {
-    const book = iterator.next();
+const it = shelf.iterator();
+while (it.hasNext()) {
+    const book = it.next();
     console.log("book name is", book.name);
 
 }
