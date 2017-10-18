@@ -1,8 +1,10 @@
 export class Banner {
-    public showWithParen(text: string) {
-        return `(${text})`;
+    constructor(private text) {
     }
-    public showWithAster(text: string) {
-        return `*${text}*`;
+    public showWithParen() {
+        return `(${this.text})`;
+    }
+    public showWithAster() {
+        return `*${this.text}*`;
     }
 }

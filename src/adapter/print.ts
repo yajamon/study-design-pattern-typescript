@@ -1,4 +1,4 @@
 export interface Print {
-    printWeak: (text: string) => string;
-    printStrong: (text: string) => string;
+    printWeak: () => string;   // ()で文字列を包む
+    printStrong: () => string; // **で文字列を包む
 }
