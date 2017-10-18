@@ -1,11 +1,16 @@
 import { Banner } from "./banner";
 import { Print } from "./print";
 
-export class PrintBanner extends Banner implements Print {
+export class PrintBanner extends Print {
+    private banner: Banner;
+    constructor(text: string) {
+        super();
+        this.banner = new Banner(text);
+    }
     public printWeak(): string {
-        return this.showWithParen();
+        return this.banner.showWithParen();
     }
     public printStrong(): string {
-        return this.showWithAster();
+        return this.banner.showWithAster();
     }
 }
