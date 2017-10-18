@@ -1,5 +1,5 @@
 export class Banner {
-    constructor(private text) {
+    constructor(private text: string) {
     }
     public showWithParen() {
         return `(${this.text})`;
