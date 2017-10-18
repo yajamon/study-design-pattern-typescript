@@ -12,7 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "watch": "tsc -w",
-    "lint": "tslint --project ./"
+    "lint": "tslint --project ./",
+    "lint-fix": "tslint --project ./ --fix"
   },
   "repository": {
     "type": "git",
