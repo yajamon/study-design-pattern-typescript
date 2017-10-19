@@ -1,3 +1,4 @@
+import * as process from "process";
 import { Display } from "./display";
 
 export class CharDisplay extends Display {
@@ -12,13 +13,13 @@ export class CharDisplay extends Display {
     }
 
     public open() {
-        console.log("<<");
+        process.stdout.write("<<");
     }
 
     public print() {
-        console.log(this.ch);
+        process.stdout.write(this.ch);
     }
     public close() {
-        console.log(">>");
+        process.stdout.write(">>");
     }
 }
