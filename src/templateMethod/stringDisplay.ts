@@ -7,13 +7,18 @@ export class StringDisplay extends Display {
     }
 
     public open() {
-        process.stdout.write("<<");
+        process.stdout.write(this.fence() + "\n");
     }
 
     public print() {
-        process.stdout.write(this.text);
+        process.stdout.write(`|${this.text}|` + "\n");
     }
     public close() {
-        process.stdout.write(">>");
+        process.stdout.write(this.fence() + "\n");
+    }
+
+    private fence(): string {
+        const bar = "-".repeat(this.text.length);
+        return `+${bar}+`;
     }
 }
