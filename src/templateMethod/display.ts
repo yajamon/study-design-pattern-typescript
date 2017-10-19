@@ -7,7 +7,7 @@ export abstract class Display {
         this.close();
     }
 
-    public abstract open();
-    public abstract print();
-    public abstract close();
+    public abstract open(): void;
+    public abstract print(): void;
+    public abstract close(): void;
 }
