@@ -1,5 +1,11 @@
 import { CharDisplay } from "./charDisplay";
+import { StringDisplay } from "./stringDisplay";
 
-const d = new CharDisplay("a");
+console.log("CharDisplay");
+const cd = new CharDisplay("a");
+cd.display();
 
-d.display();
+console.log("");
+console.log("StringDisplay");
+const sd = new StringDisplay("Hello world.");
+sd.display();
