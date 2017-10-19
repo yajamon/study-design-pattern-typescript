@@ -14,4 +14,11 @@ export class CharDisplay extends Display {
     public open() {
         console.log("<<");
     }
+
+    public print() {
+        console.log(this.ch);
+    }
+    public close() {
+        console.log(">>");
+    }
 }
