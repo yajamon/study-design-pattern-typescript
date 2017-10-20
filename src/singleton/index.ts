@@ -1,4 +1,5 @@
 import { Singleton } from "./singleton";
+import { TicketMaker } from "./ticketMaker";
 
 console.log("start");
 const obj1: Singleton = Singleton.sharedInstance();
@@ -11,3 +12,8 @@ if (obj1 === obj2) {
 }
 
 console.log("end");
+
+const maker = TicketMaker.getInstance();
+console.log(`ticket number: ${maker.getNextTicketNumber()}`);
+console.log(`ticket number: ${maker.getNextTicketNumber()}`);
+console.log(`ticket number: ${maker.getNextTicketNumber()}`);
