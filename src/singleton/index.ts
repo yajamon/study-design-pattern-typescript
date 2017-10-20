@@ -1,5 +1,6 @@
 import { Singleton } from "./singleton";
 import { TicketMaker } from "./ticketMaker";
+import { Triple } from "./triple";
 
 console.log("start");
 const obj1: Singleton = Singleton.sharedInstance();
@@ -17,3 +18,8 @@ const maker = TicketMaker.getInstance();
 console.log(`ticket number: ${maker.getNextTicketNumber()}`);
 console.log(`ticket number: ${maker.getNextTicketNumber()}`);
 console.log(`ticket number: ${maker.getNextTicketNumber()}`);
+
+const triple0 = Triple.sharedInstance(0);
+const triple1 = Triple.sharedInstance(1);
+const triple2 = Triple.sharedInstance(2);
+// const triple3 = Triple.sharedInstance(3);
