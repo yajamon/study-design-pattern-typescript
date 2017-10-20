@@ -9,3 +9,7 @@ const card3 = factory.create("そうすけ");
 card1.use();
 card2.use();
 card3.use();
+
+factory.owners.forEach((owner, number) => {
+    console.log(`idNumber: ${number} name: ${owner}`);
+});
