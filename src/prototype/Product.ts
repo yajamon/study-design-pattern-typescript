@@ -1,4 +1,4 @@
-export abstract class Product {
-    public abstract use(text: string): void;
-    public abstract createClone(): Product;
+export interface Product {
+    use(text: string): void;
+    createClone(): Product;
 }
