@@ -1,7 +1,7 @@
 import { Builder } from "./builder";
 
 export class TextBuilder extends Builder {
-    private buffer: string;
+    private buffer: string = "";
 
     public makeTitle(title: string) {
         this.buffer += "==========================\n";
